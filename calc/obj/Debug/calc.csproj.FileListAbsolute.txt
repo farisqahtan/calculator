@@ -1,0 +1,10 @@
+D:\faris\calc\calc\bin\Debug\calc.exe.config
+D:\faris\calc\calc\bin\Debug\calc.exe
+D:\faris\calc\calc\bin\Debug\calc.pdb
+D:\faris\calc\calc\obj\Debug\calc.csproj.AssemblyReference.cache
+D:\faris\calc\calc\obj\Debug\calc.Form1.resources
+D:\faris\calc\calc\obj\Debug\calc.Properties.Resources.resources
+D:\faris\calc\calc\obj\Debug\calc.csproj.GenerateResource.cache
+D:\faris\calc\calc\obj\Debug\calc.csproj.CoreCompileInputs.cache
+D:\faris\calc\calc\obj\Debug\calc.exe
+D:\faris\calc\calc\obj\Debug\calc.pdb
