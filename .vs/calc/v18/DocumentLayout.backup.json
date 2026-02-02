@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\faris\\calc\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3E4C2A65-ED71-4AAF-BA8D-24B6D858F05B}|calc\\calc.csproj|d:\\faris\\calc\\calc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E4C2A65-ED71-4AAF-BA8D-24B6D858F05B}|calc\\calc.csproj|solutionrelative:calc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3E4C2A65-ED71-4AAF-BA8D-24B6D858F05B}|calc\\calc.csproj|d:\\faris\\calc\\calc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3E4C2A65-ED71-4AAF-BA8D-24B6D858F05B}|calc\\calc.csproj|solutionrelative:calc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E4C2A65-ED71-4AAF-BA8D-24B6D858F05B}|calc\\calc.csproj|D:\\faris\\calc\\calc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3E4C2A65-ED71-4AAF-BA8D-24B6D858F05B}|calc\\calc.csproj|solutionrelative:calc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3E4C2A65-ED71-4AAF-BA8D-24B6D858F05B}|calc\\calc.csproj|D:\\faris\\calc\\calc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E4C2A65-ED71-4AAF-BA8D-24B6D858F05B}|calc\\calc.csproj|solutionrelative:calc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,10 +22,6 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
@@ -37,8 +33,16 @@
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\faris\\calc\\calc\\Form1.cs",
               "RelativeDocumentMoniker": "calc\\Form1.cs",
@@ -50,13 +54,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\faris\\calc\\calc\\Form1.cs",
               "RelativeDocumentMoniker": "calc\\Form1.cs",
               "ToolTip": "D:\\faris\\calc\\calc\\Form1.cs",
               "RelativeToolTip": "calc\\Form1.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAtwBsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFwCAAAAAAAAAAAlwHUCAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-02T21:42:22.543Z",
               "EditorCaption": ""

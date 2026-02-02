@@ -69,6 +69,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -85,6 +86,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="calculate_40dp_7CA7D8_FILL0_wght400_GRAD0_opsz40.ico" />
+    <None Include="Resources\backspace_60dp_E2E3DE_FILL0_wght700_GRAD0_opsz40.png" />
+    <None Include="Resources\backspace_60dp_1C211F_FILL0_wght700_GRAD0_opsz40.png" />
+    <None Include="Resources\black_white.png" />
+    <None Include="Resources\white.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

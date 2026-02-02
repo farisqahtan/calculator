@@ -30,11 +30,18 @@ namespace calc
         void clear()
         {
             textBox1.Clear();
-            label1.Text = "0";
+            textBox2.Text = "0";
             result = 0;
             open = 0;
             close = 0;
-            label1.ForeColor = Color.White;
+            if (isBlack)
+            {
+                textBox2.ForeColor = Color.White;
+            }
+            else
+            {
+                textBox2.ForeColor = Color.FromArgb(19, 20, 17);
+            }
             button10.Enabled = true;
         }
 
@@ -44,7 +51,7 @@ namespace calc
             {
                 textBox1.Text += number;
             }
-            else if (label1.Text.Length > 1 && char.IsDigit(textBox1.Text[textBox1.Text.Length - 1]))
+            else if (textBox2.Text.Length > 1 && char.IsDigit(textBox1.Text[textBox1.Text.Length - 1]))
             {
                 clear();
                 textBox1.Text += number;
@@ -60,8 +67,8 @@ namespace calc
         {
             if (input == "" || (!char.IsDigit(input[input.Length - 1]) && input[input.Length - 1] != ')') || open != close) // اذا كان فاضي او اخر حرف لم يكن رقم ولا يساوي تسكيرة القوس
             {
-                label1.Text = "Format Error";
-                label1.ForeColor = Color.DarkRed;
+                textBox2.Text = "Format Error";
+                textBox2.ForeColor = Color.DarkRed;
                 open = 0;
                 close = 0;
                 result = 0;
@@ -154,7 +161,7 @@ namespace calc
                     case '÷':
                         if (number[i + 1] == 0)
                         {
-                            label1.Text = "Cannot divide by zero";
+                            textBox2.Text = "Cannot divide by zero";
                             return result;
                         }
                         else
@@ -271,8 +278,15 @@ namespace calc
             if (char.IsDigit(lastElem) || lastElem == ')')
             {
                 textBox1.Text += button12.Text;
-                label1.Text = "0";
-                label1.ForeColor = Color.White;
+                textBox2.Text = "0";
+                if (isBlack)
+                {
+                    textBox2.ForeColor = Color.White;
+                }
+                else
+                {
+                    textBox2.ForeColor = Color.FromArgb(19, 20, 17);
+                }
                 button10.Enabled = true;
             }
         }
@@ -280,9 +294,9 @@ namespace calc
         private void button11_Click(object sender, EventArgs e)
         {
             double result = Equal(textBox1.Text);
-            if (label1.Text.Length == 1)
+            if (textBox2.Text.Length == 1)
             {
-                label1.Text = (textBox1.Text + " = " + Convert.ToString(result));
+                textBox2.Text = (textBox1.Text + " = " + Convert.ToString(result));
             }
             textBox1.Text = Convert.ToString(result); // لازم يحول النتيجة لنص عشان يعرضها في مربع النص
         }
@@ -301,8 +315,15 @@ namespace calc
                 }
                 if (char.IsDigit(lastElem) || lastElem == '×' || lastElem == '÷' || lastElem == ')' || lastElem == '(')
                 {
-                    label1.Text = "0";
-                    label1.ForeColor = Color.White;
+                    textBox2.Text = "0";
+                    if (isBlack)
+                    {
+                        textBox2.ForeColor = Color.White;
+                    }
+                    else
+                    {
+                        textBox2.ForeColor = Color.FromArgb(19, 20, 17);
+                    }
                     textBox1.Text += button13.Text;
                 }
             }
@@ -385,8 +406,15 @@ namespace calc
             char lastElem = textBox1.Text[textBox1.Text.Length - 1];
             if (char.IsDigit(lastElem) || lastElem == ')')
             {
-                label1.Text = "0";
-                label1.ForeColor = Color.White;
+                textBox2.Text = "0";
+                if (isBlack)
+                {
+                    textBox2.ForeColor = Color.White;
+                }
+                else
+                {
+                    textBox2.ForeColor = Color.FromArgb(19, 20, 17);
+                }
                 textBox1.Text += button14.Text;
                 button10.Enabled = true;
             }
@@ -399,16 +427,18 @@ namespace calc
             char lastElem = textBox1.Text[textBox1.Text.Length - 1];
             if (char.IsDigit(lastElem) || lastElem == ')')
             {
-                label1.Text = "0";
-                label1.ForeColor = Color.White;
+                textBox2.Text = "0";
+                if (isBlack)
+                {
+                    textBox2.ForeColor = Color.White;
+                }
+                else
+                {
+                    textBox2.ForeColor = Color.FromArgb(19, 20, 17);
+                }
                 textBox1.Text += button15.Text;
                 button10.Enabled = true;
             }
-        }
-        
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -503,6 +533,96 @@ namespace calc
         private void label1_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void WhiteMode()
+        {
+            Form1.ActiveForm.BackColor = Color.White;
+            textBox1.BackColor = Color.White;
+            textBox1.ForeColor = Color.FromArgb(19, 20, 17);
+            textBox2.BackColor = Color.White;
+            textBox2.ForeColor = Color.FromArgb(19, 20, 17);
+
+            button0.BackColor = button1.BackColor =
+            button2.BackColor = button3.BackColor =
+            button4.BackColor = button5.BackColor =
+            button6.BackColor = button7.BackColor = button16.BackColor =
+            button8.BackColor = button9.BackColor = button10.BackColor = Color.FromArgb(226, 227, 222);
+            button0.ForeColor = button1.ForeColor =
+            button2.ForeColor = button7.ForeColor =
+            button4.ForeColor = button3.ForeColor =
+            button6.ForeColor = button5.ForeColor =
+            button8.ForeColor = button9.ForeColor = button10.ForeColor = Color.FromArgb(28, 33, 31);
+            button16.BackgroundImage = calc.Properties.Resources.backspace_Black;
+            button19.BackgroundImage = calc.Properties.Resources.black_white;
+            button19.FlatAppearance.MouseOverBackColor = Color.FromArgb(220, 230, 225);
+
+
+            button11.BackColor = Color.FromArgb(196, 238, 208);
+            button11.ForeColor = Color.FromArgb(15, 93, 68);
+
+            button12.BackColor = button13.BackColor = 
+            button14.BackColor = button15.BackColor = button18.BackColor = Color.FromArgb(196, 238, 208);
+            button12.ForeColor = button13.ForeColor = 
+            button14.ForeColor = button15.ForeColor = button18.ForeColor = Color.FromArgb(51, 66, 61);
+
+            button17.ForeColor = Color.FromArgb(0, 74, 82);
+            button17.BackColor = Color.FromArgb(195, 239, 245);
+        }
+
+        private void BlackMode()
+        {
+            this.BackColor = Color.FromArgb(19, 20, 17);
+            textBox1.BackColor = Color.FromArgb(19, 20, 17);
+            textBox1.ForeColor = Color.White;
+            textBox2.BackColor = Color.FromArgb(19, 20, 17);
+            textBox2.ForeColor = Color.White;
+
+            button0.BackColor = button1.BackColor =
+            button2.BackColor = button3.BackColor =
+            button4.BackColor = button5.BackColor =
+            button6.BackColor = button7.BackColor = button16.BackColor =
+            button8.BackColor = button9.BackColor = button10.BackColor = Color.FromArgb(28, 33, 31);
+            button0.ForeColor = button1.ForeColor =
+            button2.ForeColor = button7.ForeColor =
+            button4.ForeColor = button3.ForeColor =
+            button6.ForeColor = button5.ForeColor =
+            button8.ForeColor = button9.ForeColor = button10.ForeColor = Color.FromArgb(226, 227, 222);
+            button16.BackgroundImage = calc.Properties.Resources.backspace_White;
+            button19.BackgroundImage = calc.Properties.Resources.white;
+            button19.FlatAppearance.MouseOverBackColor = Color.FromArgb(49, 51, 47);
+
+            button11.BackColor = Color.FromArgb(15, 93, 68);
+            button11.ForeColor = Color.FromArgb(196, 238, 208);
+
+            button12.BackColor = button13.BackColor = 
+            button14.BackColor = button15.BackColor = button18.BackColor = Color.FromArgb(51, 66, 61);
+            button12.ForeColor = button13.ForeColor = 
+            button14.ForeColor = button15.ForeColor = button18.ForeColor = Color.FromArgb(196, 238, 208);
+
+            button17.ForeColor = Color.FromArgb(195, 239, 245);
+            button17.BackColor = Color.FromArgb(0, 74, 82);
+        }
+
+        bool isBlack = true;
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            if (isBlack)
+            {
+                WhiteMode();
+                isBlack = false;
+            }
+            else
+            {
+                BlackMode();
+                isBlack = true;
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            textBox2.SelectionStart = textBox2.Text.Length;
         }
 
         private void button18_Click(object sender, EventArgs e)

@@ -48,8 +48,9 @@
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.button18 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button0
@@ -61,7 +62,7 @@
             this.button0.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button0.Font = new System.Drawing.Font("Google Sans Code", 19.8F, System.Drawing.FontStyle.Bold);
             this.button0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(227)))), ((int)(((byte)(222)))));
-            this.button0.Location = new System.Drawing.Point(100, 380);
+            this.button0.Location = new System.Drawing.Point(100, 427);
             this.button0.Name = "button0";
             this.button0.Size = new System.Drawing.Size(87, 59);
             this.button0.TabIndex = 1;
@@ -75,7 +76,7 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Google Sans Code", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(227)))), ((int)(((byte)(222)))));
-            this.textBox1.Location = new System.Drawing.Point(13, 13);
+            this.textBox1.Location = new System.Drawing.Point(13, 60);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(360, 34);
@@ -91,7 +92,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Google Sans Code", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(227)))), ((int)(((byte)(222)))));
-            this.button1.Location = new System.Drawing.Point(7, 316);
+            this.button1.Location = new System.Drawing.Point(7, 363);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(87, 59);
             this.button1.TabIndex = 2;
@@ -108,7 +109,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Google Sans Code", 19.8F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(227)))), ((int)(((byte)(222)))));
-            this.button2.Location = new System.Drawing.Point(100, 316);
+            this.button2.Location = new System.Drawing.Point(100, 363);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(87, 59);
             this.button2.TabIndex = 3;
@@ -125,7 +126,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Google Sans Code", 19.8F, System.Drawing.FontStyle.Bold);
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(227)))), ((int)(((byte)(222)))));
-            this.button3.Location = new System.Drawing.Point(193, 316);
+            this.button3.Location = new System.Drawing.Point(193, 363);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(87, 59);
             this.button3.TabIndex = 4;
@@ -142,7 +143,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Google Sans Code", 19.8F, System.Drawing.FontStyle.Bold);
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(227)))), ((int)(((byte)(222)))));
-            this.button4.Location = new System.Drawing.Point(7, 251);
+            this.button4.Location = new System.Drawing.Point(7, 298);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(87, 59);
             this.button4.TabIndex = 5;
@@ -159,7 +160,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("Google Sans Code", 19.8F, System.Drawing.FontStyle.Bold);
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(227)))), ((int)(((byte)(222)))));
-            this.button5.Location = new System.Drawing.Point(100, 251);
+            this.button5.Location = new System.Drawing.Point(100, 298);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(87, 59);
             this.button5.TabIndex = 6;
@@ -176,7 +177,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("Google Sans Code", 19.8F, System.Drawing.FontStyle.Bold);
             this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(227)))), ((int)(((byte)(222)))));
-            this.button6.Location = new System.Drawing.Point(193, 251);
+            this.button6.Location = new System.Drawing.Point(193, 298);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(87, 59);
             this.button6.TabIndex = 7;
@@ -193,7 +194,7 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button7.Font = new System.Drawing.Font("Google Sans Code", 19.8F, System.Drawing.FontStyle.Bold);
             this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(227)))), ((int)(((byte)(222)))));
-            this.button7.Location = new System.Drawing.Point(7, 186);
+            this.button7.Location = new System.Drawing.Point(7, 233);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(87, 59);
             this.button7.TabIndex = 8;
@@ -210,7 +211,7 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button8.Font = new System.Drawing.Font("Google Sans Code", 19.8F, System.Drawing.FontStyle.Bold);
             this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(227)))), ((int)(((byte)(222)))));
-            this.button8.Location = new System.Drawing.Point(100, 186);
+            this.button8.Location = new System.Drawing.Point(100, 233);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(87, 59);
             this.button8.TabIndex = 9;
@@ -227,7 +228,7 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button9.Font = new System.Drawing.Font("Google Sans Code", 19.8F, System.Drawing.FontStyle.Bold);
             this.button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(227)))), ((int)(((byte)(222)))));
-            this.button9.Location = new System.Drawing.Point(193, 186);
+            this.button9.Location = new System.Drawing.Point(193, 233);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(87, 59);
             this.button9.TabIndex = 10;
@@ -244,7 +245,7 @@
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button10.Font = new System.Drawing.Font("Google Sans Code", 19.8F, System.Drawing.FontStyle.Bold);
             this.button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(227)))), ((int)(((byte)(222)))));
-            this.button10.Location = new System.Drawing.Point(7, 380);
+            this.button10.Location = new System.Drawing.Point(7, 427);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(87, 59);
             this.button10.TabIndex = 11;
@@ -260,7 +261,7 @@
             this.button11.FlatAppearance.BorderSize = 0;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button11.Font = new System.Drawing.Font("Matura MT Script Capitals", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(286, 380);
+            this.button11.Location = new System.Drawing.Point(286, 427);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(87, 59);
             this.button11.TabIndex = 12;
@@ -277,7 +278,7 @@
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button12.Font = new System.Drawing.Font("Matura MT Script Capitals", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(238)))), ((int)(((byte)(208)))));
-            this.button12.Location = new System.Drawing.Point(286, 315);
+            this.button12.Location = new System.Drawing.Point(286, 362);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(87, 59);
             this.button12.TabIndex = 13;
@@ -294,7 +295,7 @@
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button13.Font = new System.Drawing.Font("Matura MT Script Capitals", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(238)))), ((int)(((byte)(208)))));
-            this.button13.Location = new System.Drawing.Point(286, 251);
+            this.button13.Location = new System.Drawing.Point(286, 298);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(87, 59);
             this.button13.TabIndex = 14;
@@ -311,7 +312,7 @@
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button14.Font = new System.Drawing.Font("Matura MT Script Capitals", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(238)))), ((int)(((byte)(208)))));
-            this.button14.Location = new System.Drawing.Point(286, 186);
+            this.button14.Location = new System.Drawing.Point(286, 233);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(87, 59);
             this.button14.TabIndex = 15;
@@ -328,7 +329,7 @@
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button15.Font = new System.Drawing.Font("Matura MT Script Capitals", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(238)))), ((int)(((byte)(208)))));
-            this.button15.Location = new System.Drawing.Point(286, 121);
+            this.button15.Location = new System.Drawing.Point(286, 168);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(87, 59);
             this.button15.TabIndex = 16;
@@ -339,14 +340,14 @@
             // button16
             // 
             this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(33)))), ((int)(((byte)(31)))));
-            this.button16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button16.BackgroundImage")));
+            this.button16.BackgroundImage = global::calc.Properties.Resources.backspace_White;
             this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button16.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button16.FlatAppearance.BorderColor = System.Drawing.Color.LightSlateGray;
             this.button16.FlatAppearance.BorderSize = 0;
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button16.Font = new System.Drawing.Font("Matura MT Script Capitals", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.Location = new System.Drawing.Point(193, 380);
+            this.button16.Location = new System.Drawing.Point(193, 427);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(87, 59);
             this.button16.TabIndex = 17;
@@ -362,27 +363,13 @@
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button17.Font = new System.Drawing.Font("Google Sans Code", 19.8F, System.Drawing.FontStyle.Bold);
             this.button17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(239)))), ((int)(((byte)(245)))));
-            this.button17.Location = new System.Drawing.Point(100, 121);
+            this.button17.Location = new System.Drawing.Point(100, 168);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(87, 59);
             this.button17.TabIndex = 18;
             this.button17.Text = "AC";
             this.button17.UseVisualStyleBackColor = false;
             this.button17.Click += new System.EventHandler(this.button17_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label1.Font = new System.Drawing.Font("Google Sans Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(227)))), ((int)(((byte)(222)))));
-            this.label1.Location = new System.Drawing.Point(12, 77);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(27, 33);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "0";
-            this.label1.TextChanged += new System.EventHandler(this.label1_TextChanged);
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button18
             // 
@@ -393,7 +380,7 @@
             this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button18.Font = new System.Drawing.Font("Google Sans Code", 19.8F, System.Drawing.FontStyle.Bold);
             this.button18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(238)))), ((int)(((byte)(208)))));
-            this.button18.Location = new System.Drawing.Point(193, 121);
+            this.button18.Location = new System.Drawing.Point(193, 168);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(87, 59);
             this.button18.TabIndex = 21;
@@ -401,14 +388,50 @@
             this.button18.UseVisualStyleBackColor = false;
             this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
+            // button19
+            // 
+            this.button19.BackColor = System.Drawing.Color.Transparent;
+            this.button19.BackgroundImage = global::calc.Properties.Resources.white;
+            this.button19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button19.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(20)))), ((int)(((byte)(17)))));
+            this.button19.FlatAppearance.BorderSize = 0;
+            this.button19.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(47)))));
+            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold);
+            this.button19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(239)))), ((int)(((byte)(245)))));
+            this.button19.Location = new System.Drawing.Point(7, 7);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(30, 30);
+            this.button19.TabIndex = 23;
+            this.button19.UseVisualStyleBackColor = false;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(20)))), ((int)(((byte)(17)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Google Sans Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(227)))), ((int)(((byte)(222)))));
+            this.textBox2.Location = new System.Drawing.Point(13, 115);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(360, 26);
+            this.textBox2.TabIndex = 24;
+            this.textBox2.TabStop = false;
+            this.textBox2.Text = "0";
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(20)))), ((int)(((byte)(17)))));
-            this.ClientSize = new System.Drawing.Size(385, 453);
+            this.ClientSize = new System.Drawing.Size(380, 493);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.button19);
             this.Controls.Add(this.button18);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button15);
@@ -463,8 +486,9 @@
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 
