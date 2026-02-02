@@ -1,0 +1,9 @@
+# Visual Studio specific files
+.vs/
+[Bb]in/
+[Oo]bj/
+*.suo
+*.user
+*.pdb
+*.cache
+*.vsidx
