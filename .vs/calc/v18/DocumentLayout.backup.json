@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\faris\\calc\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3E4C2A65-ED71-4AAF-BA8D-24B6D858F05B}|calc\\calc.csproj|d:\\faris\\calc\\calc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3E4C2A65-ED71-4AAF-BA8D-24B6D858F05B}|calc\\calc.csproj|solutionrelative:calc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3E4C2A65-ED71-4AAF-BA8D-24B6D858F05B}|calc\\calc.csproj|D:\\faris\\calc\\calc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E4C2A65-ED71-4AAF-BA8D-24B6D858F05B}|calc\\calc.csproj|solutionrelative:calc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E4C2A65-ED71-4AAF-BA8D-24B6D858F05B}|calc\\calc.csproj|d:\\faris\\calc\\calc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3E4C2A65-ED71-4AAF-BA8D-24B6D858F05B}|calc\\calc.csproj|solutionrelative:calc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,25 +42,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\faris\\calc\\calc\\Form1.cs",
               "RelativeDocumentMoniker": "calc\\Form1.cs",
-              "ToolTip": "D:\\faris\\calc\\calc\\Form1.cs [Design]",
-              "RelativeToolTip": "calc\\Form1.cs [Design]",
+              "ToolTip": "D:\\faris\\calc\\calc\\Form1.cs [Design]*",
+              "RelativeToolTip": "calc\\Form1.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-02T21:34:23.933Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\faris\\calc\\calc\\Form1.cs",
               "RelativeDocumentMoniker": "calc\\Form1.cs",
-              "ToolTip": "D:\\faris\\calc\\calc\\Form1.cs",
-              "RelativeToolTip": "calc\\Form1.cs",
-              "ViewState": "AgIAAFwCAAAAAAAAAAAlwHUCAAAMAAAAAAAAAA==",
+              "ToolTip": "D:\\faris\\calc\\calc\\Form1.cs*",
+              "RelativeToolTip": "calc\\Form1.cs*",
+              "ViewState": "AgIAACYBAAAAAAAAAADwvykBAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-02T21:42:22.543Z",
               "EditorCaption": ""
