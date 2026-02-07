@@ -4,12 +4,13 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics.SymbolStore;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Drawing.Drawing2D;
 
 namespace calc
 {
@@ -296,9 +297,13 @@ namespace calc
             double result = Equal(textBox1.Text);
             if (textBox2.Text.Length == 1)
             {
-                textBox2.Text = (textBox1.Text + " = " + Convert.ToString(result));
+                textBox2.Text = (textBox1.Text + " = ");
             }
             textBox1.Text = Convert.ToString(result); // لازم يحول النتيجة لنص عشان يعرضها في مربع النص
+            if (char.IsDigit(textBox2.Text[0]))
+            {
+                dataGridView1.Rows.Add(textBox2.Text + "\n" + result.ToString());
+            }
         }
         private void button13_Click(object sender, EventArgs e)
         {
@@ -542,6 +547,14 @@ namespace calc
             textBox1.ForeColor = Color.FromArgb(19, 20, 17);
             textBox2.BackColor = Color.White;
             textBox2.ForeColor = Color.FromArgb(19, 20, 17);
+            groupBox1.BackColor = Color.FromArgb(226, 227, 222);
+            groupBox1.ForeColor = Color.FromArgb(25, 30, 30);
+            dataGridView1.BackgroundColor = Color.FromArgb(226, 227, 222);
+            dataGridView1.Columns["History"].DefaultCellStyle.BackColor = Color.FromArgb(226, 227, 222);
+            dataGridView1.Columns["History"].DefaultCellStyle.ForeColor = Color.FromArgb(25, 30, 30);
+            dataGridView1.Columns["History"].DefaultCellStyle.SelectionBackColor = Color.FromArgb(226, 227, 222);
+            dataGridView1.Columns["History"].DefaultCellStyle.SelectionForeColor = Color.FromArgb(25, 30, 30);
+            dataGridView1.GridColor = Color.FromArgb(226, 227, 222);
 
             button0.BackColor = button1.BackColor =
             button2.BackColor = button3.BackColor =
@@ -555,7 +568,11 @@ namespace calc
             button8.ForeColor = button9.ForeColor = button10.ForeColor = Color.FromArgb(28, 33, 31);
             button16.BackgroundImage = calc.Properties.Resources.backspace_Black;
             button19.BackgroundImage = calc.Properties.Resources.black_white;
+            button20.BackgroundImage = calc.Properties.Resources.history_Black;
+            button21.BackgroundImage = calc.Properties.Resources.delete_Black;
             button19.FlatAppearance.MouseOverBackColor = Color.FromArgb(220, 230, 225);
+            button20.FlatAppearance.MouseOverBackColor = Color.FromArgb(220, 230, 225);
+            button21.FlatAppearance.MouseOverBackColor = Color.FromArgb(220, 230, 225);
 
 
             button11.BackColor = Color.FromArgb(196, 238, 208);
@@ -577,6 +594,14 @@ namespace calc
             textBox1.ForeColor = Color.White;
             textBox2.BackColor = Color.FromArgb(19, 20, 17);
             textBox2.ForeColor = Color.White;
+            groupBox1.ForeColor = Color.FromArgb(226, 227, 222);
+            groupBox1.BackColor = Color.FromArgb(25, 30, 30);
+            dataGridView1.BackgroundColor = Color.FromArgb(25, 30, 30);
+            dataGridView1.Columns["History"].DefaultCellStyle.BackColor = Color.FromArgb(25, 30, 30);
+            dataGridView1.Columns["History"].DefaultCellStyle.ForeColor = Color.FromArgb(226, 227, 222);
+            dataGridView1.Columns["History"].DefaultCellStyle.SelectionBackColor = Color.FromArgb(25, 30, 30);
+            dataGridView1.Columns["History"].DefaultCellStyle.SelectionForeColor = Color.FromArgb(226, 227, 222);
+            dataGridView1.GridColor = Color.FromArgb(25, 30, 30);
 
             button0.BackColor = button1.BackColor =
             button2.BackColor = button3.BackColor =
@@ -590,7 +615,11 @@ namespace calc
             button8.ForeColor = button9.ForeColor = button10.ForeColor = Color.FromArgb(226, 227, 222);
             button16.BackgroundImage = calc.Properties.Resources.backspace_White;
             button19.BackgroundImage = calc.Properties.Resources.white;
+            button20.BackgroundImage = calc.Properties.Resources.history_White;
+            button21.BackgroundImage = calc.Properties.Resources.delete_White;
             button19.FlatAppearance.MouseOverBackColor = Color.FromArgb(49, 51, 47);
+            button20.FlatAppearance.MouseOverBackColor = Color.FromArgb(49, 51, 47);
+            button21.FlatAppearance.MouseOverBackColor = Color.FromArgb(49, 51, 47);
 
             button11.BackColor = Color.FromArgb(15, 93, 68);
             button11.ForeColor = Color.FromArgb(196, 238, 208);
@@ -623,6 +652,23 @@ namespace calc
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             textBox2.SelectionStart = textBox2.Text.Length;
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            if (this.Width < 400)
+            {
+                this.Width = 597;
+            }
+            else
+            {
+                this.Width = 394;
+            }
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Clear();
         }
 
         private void button18_Click(object sender, EventArgs e)
